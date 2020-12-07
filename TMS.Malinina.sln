@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework2", "src\Malinina.Homework.07.12\Homework2\Homework2.csproj", "{37948789-2AD5-44E9-8460-C508142BA000}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework1", "src\Malinina.Homework.07.12\Homework2\Homework1.csproj", "{37948789-2AD5-44E9-8460-C508142BA000}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
