@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace Malinina.Homework1
+namespace Malinina.Homework.03.12
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Hello, Tania!");
             Console.ReadLine();
         }
     }
