@@ -1,5 +1,32 @@
 ﻿using System;
 
+namespace CalculationDifferenceDates
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            while (true)
+            {
+                Console.WriteLine($"Enter date: ");
+                string inputValue = Console.ReadLine();
+
+                if (DateTime.TryParse(inputValue, out DateTime date))
+                {
+                    Console.WriteLine($"Day is - {date.DayOfWeek}");
+                }
+                else
+                {
+                    Console.WriteLine("Incorrect date!");
+                }
+            }
+        }
+    }
+}
+
+
+/*using System;
+
 namespace Malinina.Homework.DateInputHandler
 {
     class Program
@@ -31,4 +58,4 @@ namespace Malinina.Homework.DateInputHandler
         
         }
     }
-}
+}*/
