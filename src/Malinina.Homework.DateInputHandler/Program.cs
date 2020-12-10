@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Malinina.Homework.DateInput.Handler
+namespace Malinina.Homework.DateInputHandler
 {
     class Program
     {
