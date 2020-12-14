@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CalculationDifferenceDates
+namespace Malinina.Homework.DateInputHandler
 {
     class Program
     {
