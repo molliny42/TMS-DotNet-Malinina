@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Malinina.Homework.DateInputHandler", "src\Malinina.Homework.DateInputHandler\Malinina.Homework.DateInputHandler.csproj", "{5824A400-5BA9-4995-8471-F9E25B5C0B48}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Malinina.Homework.TaskМanager", "src\Malinina.Homework.TaskМanager\Malinina.Homework.TaskМanager.csproj", "{D3DB57DE-06CD-480C-8D76-231258FEB0A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Malinina.Homework.TaskМanager", "src\Malinina.Homework.TaskМanager\Malinina.Homework.TaskМanager.csproj", "{D3DB57DE-06CD-480C-8D76-231258FEB0A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Malinina.Homework.FitnessTracker", "src\Malinina.Homework.FitnessTracker\Malinina.Homework.FitnessTracker.csproj", "{0E2F346B-91D7-4E5E-9B4C-64B16CA1D01F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{D3DB57DE-06CD-480C-8D76-231258FEB0A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3DB57DE-06CD-480C-8D76-231258FEB0A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3DB57DE-06CD-480C-8D76-231258FEB0A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E2F346B-91D7-4E5E-9B4C-64B16CA1D01F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E2F346B-91D7-4E5E-9B4C-64B16CA1D01F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E2F346B-91D7-4E5E-9B4C-64B16CA1D01F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E2F346B-91D7-4E5E-9B4C-64B16CA1D01F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
