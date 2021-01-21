@@ -4,24 +4,39 @@ using System.Linq;
 
 namespace Malinina.Homework.FitnessTracker
 {
+    /// <summary>
+    /// Training work class.
+    /// </summary>
     internal class TrainingGenerator
     {
         private static Random random = new Random();
 
+        /// <summary>
+        /// Training generation.
+        /// </summary>
+        /// <returns></returns>
         public static IEnumerable<Training> GetTrainings()
         {
-            return Enumerable.Range(0, 100).Select(CreateTraining);
+            return Enumerable.Range(0, Constants.MAX_TRAININGS_COUNTS).Select(CreateTraining);
         }
 
+        /// <summary>
+        /// Creation of a training session.
+        /// </summary>
+        /// <param name="num">Number of training session.</param>
+        /// <returns></returns>
         private static Training CreateTraining(int num)
         {
-            var dateTraining = new DateTime(2021, 01, 21).AddDays(num);
-            var duration = new TimeSpan(random.Next(0, 2), random.Next(1, 60), random.Next(0, 60));
+            var dateTraining =  DateTime.Now.AddDays(num);
+            var duration = new TimeSpan(random.Next(0, Constants.MAX_TRAINING_HOURS),
+                                        random.Next(Constants.MIN_TRAINING_MINUTES, Constants.MAX_TRAINING_MINUTES),
+                                        random.Next(0, Constants.MAX_TRAINING_SECONDS));
 
-            var stepsInMinute = random.Next(113, 185);
+            int stepsInMinute = random.Next(minValue: Constants.MIN_STEPS_IN_MINUTE,
+                                            maxValue: Constants.MAX_STEPS_IN_MINUTE);
             var steps = (int)(duration.TotalMinutes * stepsInMinute);
 
-            var lengthStep = (random.NextDouble() * (1.3 - 0.67)) + 0.67;
+            var lengthStep = (random.NextDouble() * (Constants.MAX_LENGTH_STEP - Constants.MIN_LENGTH_STEP)) + Constants.MIN_LENGTH_STEP;
             var distance = steps * lengthStep;
             var averagePulsePerTraningSession = (int)GetPulses(true).Average();
 
@@ -30,6 +45,11 @@ namespace Malinina.Homework.FitnessTracker
             return training;
         }
 
+        /// <summary>
+        /// Pulse generation.
+        /// </summary>
+        /// <param name="hasThird"></param>
+        /// <returns></returns>
         public static IEnumerable<int> GetPulses(bool hasThird) // true -> [0, 1, 2, 3]
                                                                 // 1. Current = 0 -> MoveNext()
                                                                 // 2. Current = 1 -> MoveNext()
@@ -44,8 +64,6 @@ namespace Malinina.Homework.FitnessTracker
 
             if (hasThird)
                 yield return random.Next(90, 150);
-            // else
-            // 	yield break;
 
             yield return random.Next(90, 150);
 
